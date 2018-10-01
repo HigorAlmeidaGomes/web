@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+		// Criamos um objeto com nome agora para retornar umas data 
+		// agora.getFullYear() vai aparecer com resultado 2018
+		// Agora.getMonth() ele traz um array	0-11 0 e janeiro e 11 e dezembro;
+		// agora.getDate()	retorna o dia do mês como 1-31
+		// agora.getDay() retorna um intervalo 0-6 0 para domingo e 6 para sábado	
+
+		var agora = new Date();
+	    var meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto"];
+		//console.log(agora.getFullYear());
+		console.log(agora.getDate()+ " De " + meses[agora.getMonth()] + " De " + agora.getFullYear());	
+        //alert(agora.getDate()+ " De " + meses[agora.getMonth()] + " De " + agora.getFullYear());	
+		
+		var aniversario = new Date(1991,7,9);
+		console.log(aniversario.getDay());	
+			
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
