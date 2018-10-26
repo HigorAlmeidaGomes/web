@@ -3,7 +3,7 @@
  * PROJETO DE EXMPLO USANDO 
  * PADRÃO DE PROJETO STRATEGY
  * 
- * @author Higor Almeida
+ * @author Higor Almeida Gomes
  *
  */
 public class Main {
