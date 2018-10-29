@@ -1,8 +1,9 @@
+import javax.swing.JOptionPane;
 
 public class Rh {
 	
 	public void calcularSalarioFuncionario(Funcionario funcionario){
 		String salarioCalculado = funcionario.calcularSalario();
-		System.out.println(salarioCalculado);
+		JOptionPane.showMessageDialog(null, salarioCalculado,"Calculo de Salario", 2);
 	}
 }

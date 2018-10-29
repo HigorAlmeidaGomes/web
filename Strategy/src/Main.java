@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 /**
  * PROJETO DE EXMPLO USANDO 
@@ -10,18 +11,28 @@ public class Main {
 
 	public static void main(String args[]) {
 		Rh rh = new Rh();
-
+		String entrada;
+		Double salario;
+		entrada = JOptionPane.showInputDialog("Digite o seu nome");
 		Gerente gerente = new Gerente();
-		gerente.setNome("Joaoziin");
-		gerente.setSalario(5900.0);
+		gerente.setNome(entrada);
+		entrada = JOptionPane.showInputDialog("Digite o Salário");
+		salario = Double.parseDouble(entrada);
+		gerente.setSalario(salario);
 
 		Gerente gerente2 = new Gerente();
-		gerente2.setNome("Zefa");
-		gerente2.setSalario(4900.0);
+		entrada = JOptionPane.showInputDialog("Digite o Seu Nome: ");
+		gerente2.setNome(entrada);
+		entrada = JOptionPane.showInputDialog("Digite o seu Salario");
+		salario = Double.parseDouble(entrada);
+		gerente2.setSalario(salario);
 
 		Supervisor supervisor = new Supervisor();
-		supervisor.setNome("Jose");
-		supervisor.setSalario(1500.0);
+		entrada = JOptionPane.showInputDialog("Digite o seu Nome");
+		supervisor.setNome(entrada);
+		entrada = JOptionPane.showInputDialog("Digite o seu salario");
+		salario = Double.parseDouble(entrada);
+		supervisor.setSalario(salario);
 
 		rh.calcularSalarioFuncionario(gerente);
 		rh.calcularSalarioFuncionario(gerente2);
