@@ -1,8 +1,7 @@
 import javax.swing.JOptionPane;
 
 /**
- * PROJETO DE EXMPLO USANDO 
- * PADRÃO DE PROJETO STRATEGY
+ * PROJETO DE EXMPLO USANDO PADRÃO DE PROJETO STRATEGY
  * 
  * @author Higor Almeida Gomes
  *
